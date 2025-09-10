@@ -1,0 +1,10 @@
+Questo e' il processore per il packet di tipo GRID 39.01 del progetto AGILE.
+Questo processore e' utilizzato:
+- per il PDHU FUMO TE
+- per il PDHU TE
+- per AIV del P/L
+- per integrazione nel MITA
+- per la fase di pre-lancio
+- per il comissioning
+- nel ground segment
+

@@ -1,0 +1,251 @@
+-- name of packet
+ELENA SCIENCE S0 TM(21,03) 
+[PacketHeader]
+-- file in which is the primary header description
+CCSDS_TC_TM.header
+[DataFieldHeader]
+-- field 0
+spare0
+1
+0
+--field 1
+PUS Version
+3
+1
+-- field 2
+spare1
+4
+0
+-- field 3 type defines the service
+Type
+8
+21
+-- field 4 subtype defines the service
+Subtype
+8
+3
+-- field 5 Destination ID
+Destination
+8
+0
+-- field 6
+Seconds_part1
+16
+none
+-- field 7
+Seconds_part2
+16
+none
+-- field 8
+Subseconds
+16
+none
+[SourceDataField]
+noblock
+fixed
+[SourceDataFieldList]
+-- field 0
+SID
+8
+0
+-- field 1 (32 or 4 ext. histogram)
+nsectors
+8
+32
+-- field 2 Accumulation time
+AccTime
+16
+none
+-- field 3 science data flag: 1 = simulated; 0 = sampled
+DataTypeFlag
+1
+0
+-- field 4 shutter flag: 1=enabled, 0=disabled
+ShutterFlag
+1
+0
+--field 5 Oscillation frequency
+ShutterFrequency
+14
+none
+--field 6 HV1 current
+HV1_cur
+16
+none
+--field 7 HV2 current
+HV2_cur
+16
+none
+--field 8 HV MCP current
+HV_MCP_cur
+16
+none
+-- field 9 MCP temperature
+MCP_temp
+16
+none
+-- field 10  Sector Histogram Channel 
+H_ch1
+16
+none
+-- field 11 Sector Histogram Channel 
+H_ch2
+16
+none
+-- field 12 Sector Histogram Channel 
+H_ch3
+16
+none
+-- field 13 Sector Histogram Channel 
+H_ch4
+16
+none
+-- field 14 Sector Histogram Channel 
+H_ch5
+16
+none
+-- field 15 Sector Histogram Channel 
+H_ch6
+16
+none
+-- field 16 Sector Histogram Channel 
+H_ch7
+16
+none
+-- field 17 Sector Histogram Channel 
+H_ch8
+16
+none
+-- field 18 Sector Histogram Channel 
+H_ch9
+16
+none
+-- field 19  Sector Histogram Channel 
+H_ch10
+16
+none
+-- field 20 Sector Histogram Channel 
+H_ch11
+16
+none
+-- field 21 Sector Histogram Channel 
+H_ch12
+16
+none
+-- field 22 Sector Histogram Channel 
+H_ch13
+16
+none
+-- field 23 Sector Histogram Channel 
+H_ch14
+16
+none
+-- field 24 Sector Histogram Channel 
+H_ch15
+16
+none
+-- field 25 Sector Histogram Channel 
+H_ch16
+16
+none
+-- field 26 Sector Histogram Channel 
+H_ch17
+16
+none
+-- field 27 Sector Histogram Channel 
+H_ch18
+16
+none
+-- field 28 Sector Histogram Channel 
+H_ch19
+16
+none
+-- field 29 Sector Histogram Channel 
+H_ch20
+16
+none
+-- field 30 Sector Histogram Channel 
+H_ch21
+16
+none
+-- field 31 Sector Histogram Channel 
+H_ch22
+16
+none
+-- field 32 Sector Histogram Channel 
+H_ch23
+16
+none
+-- field 33 Sector Histogram Channel 
+H_ch24
+16
+none
+-- field 34 Sector Histogram Channel 
+H_ch25
+16
+none
+-- field 35 Sector Histogram Channel 
+H_ch26
+16
+none
+-- field 36 Sector Histogram Channel 
+H_ch27
+16
+none
+-- field 37  Sector Histogram Channel 
+H_ch28
+16
+none
+-- field 38  Sector Histogram Channel 
+H_ch29
+16
+none
+-- field 39  Sector Histogram Channel 
+H_ch30
+16
+none
+-- field 40  Sector Histogram Channel 
+H_ch31
+16
+none
+-- field 41  Sector Histogram Channel 
+H_ch32
+16
+none
+-- field 42
+MARK
+16
+CAFE
+[Identifiers]
+-- ID0 PID
+-- field number
+3
+-- type (0 header, 1 data field header, 2 data field)
+0
+-- value
+102
+-- ID1 Category
+-- field number
+4
+-- type (0 header, 1 data field header, 2 data field)
+0
+-- value
+12
+-- ID2 type
+3
+1
+21
+-- ID3 subtype
+-- ID3 field number
+4
+-- ID3 type (0 header, 1 data field header, 2 data field)
+1
+-- ID3 value
+3
+-- ID4 SID
+-- ID4 field number
+0
+-- ID4 type (0 header, 1 data field header, 2 data field)
+2
+-- ID4 value
+0

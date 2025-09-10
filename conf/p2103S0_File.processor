@@ -1,0 +1,79 @@
+-- # ProcessorLib version 1.2.3
+[Processor]
+-- Configuration file for PacketLib
+p2103S0.stream
+-- output file flag
+true
+-- create sync shared memory (0 false, != 0 true)
+0
+-- TELESCOP
+BEPICOLOMBO
+-- INSTRUMEN, instrument under test
+SERENA
+-- DETNAM, detector name
+ELENA
+-- model
+FLIGHT
+-- test_level
+GA5
+-- TE_name
+ME_FLIGHT_TE
+-- campaign ID
+lab
+-- period
+Sep_2025
+-- origin
+INAF-OAPD
+-- packetID
+1
+-- packet ID of start telecommand
+2
+-- packet ID of stop telecommand
+3
+-- packet ID instrument configuration
+none
+-- packet ID measurement log
+none
+-- flush of the fits file every N rows
+1
+-- extra parameters ----------------------------
+[Provider]
+-- 0 DISCOS, 1 SingleInputFile, 2 SingleInputSocket
+1
+-- acquisition type (chain) 0 = ACQ_OLD
+0
+-- directory with log file
+archive/log/
+-- ID of the DISCOS acquisition channel: only for playback mode (acq_type=ACQ_OLD or for reading the DISCOS log file).
+-- Remember: the <ACQ ID> must be 0 and the format of the filename is <campaing ID><ID of the DISCOS acquisition channel><run ID>.log
+-- If the filename of the DISCOS log file don't match, it is impossible to read the file.
+hbrs
+-- extra parameters ----------------------------
+-- directory for writing FITS file
+data/fits/
+[InputProvider]
+-- This section is only for SingleInput
+-- mode for the determination of run id 0: start from 0, 1: read the run id from a file
+-- 2: for playback mode, read from filename
+2
+-- file name that contains run id
+runid.run
+-- reading of start and stop time of measurement 0: system date and time (N.I) 1: first packet in input
+-- and last packet in input (N.I) 2: start/stop packet (N.I) 3: DISCoS log file
+3
+-- file name in input
+data/dds/2015-04-16_sc.dds
+[OperationalMode]
+-- 0: ignore start/stop telecommand
+-- 1: start measurement with start TC, stop measur. with stop TC or EOI
+0
+-- 1: write output data between a stop and a start
+-- 0: don't write output
+1
+[Monitor]
+-- 0 Dummy, 1 DISCOS
+0
+-- extra parameters ----------------------------
+-- channel
+28
+[FITS key]

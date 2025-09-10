@@ -1,0 +1,13 @@
+[Configuration]
+--prefix
+true
+--stream format bigendian
+false
+--dimension of prefix
+18
+[Header Format]
+CCSDS_TC_TM.header
+[Packet Format]
+SRN_ELN_SCI_S0.packet
+TC_start.packet
+TC_stop.packet

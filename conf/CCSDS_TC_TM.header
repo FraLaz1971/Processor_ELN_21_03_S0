@@ -1,0 +1,37 @@
+-- name of header
+Header CCSDS standard
+-- number of the field with dimension of packet
+7
+[Field]
+-- field 0
+Version number
+3
+0b000
+-- field 1 designates type of packet (TC = 1,TM = 0 ...)
+Type
+1
+0b0
+-- field 2 flag true if secondary header is present
+Secondary
+1
+0b1
+-- field 3 Process ID
+PID
+7
+102
+-- field 4 Category PID + Category = APID, 12 = 
+Category
+4
+12
+-- field 5 (none)
+Sequence flags 
+2
+0b11
+-- field 6 continuous sequence counter for each APID (Unused)
+Apid Sequence Counter
+14
+none
+-- field 7 Packet length (bytes) - 1
+Packet Length
+16
+11
